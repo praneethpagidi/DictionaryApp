@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/customDefinitionViewColor">
+
+    <TextView
+        android:id="@+id/tv_definition"
+        style="@style/textViewCommonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_margin_sm"
+        android:textColor="@color/customTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is the definition of this word. This is the definition of this word." />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_xlg"
+        android:layout_marginEnd="@dimen/layout_margin_xlg"
+        android:paddingBottom="@dimen/layout_margin_sm"
+        app:layout_constraintTop_toBottomOf="@+id/tv_definition">
+
+        <TextView
+            android:id="@+id/tv_like"
+            style="@style/textViewCommonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_like"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_dislike"
+            tools:text="432" />
+
+        <TextView
+            android:id="@+id/tv_dislike"
+            style="@style/textViewCommonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_dislike_thumb"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tv_like"
+            tools:text="120" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

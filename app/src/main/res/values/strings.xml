@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+
+    <string name="str_btn_search">Search</string>
+    <string name="search_a_word">Search a word</string>
+    <string name="positive_dialog_button_text">OK</string>
+    <string name="search_for_valid_word">Please search for a valid word</string>
+    <string name="menu_sort_like">Sort by likes</string>
+    <string name="menu_sort_dislike">Sort by dis-likes</string>
+    <string name="menu_sort">Sort</string>
+    <string name="generic_service_error">Sorry, there was a service issue, please try again</string>
+</resources>
